@@ -49,7 +49,7 @@ public class Mouvement_compte {
         ResultSet res = null;
         EtablirConnection ec = new EtablirConnection();
         try{
-            con = ec.get_Connection("enchere","enchere");
+            con = ec.get_Connection();
             String requete = "insert into mouvement_compte(id_client,type_mouvement,montant) values  ("+this.getClient().getId()+",1,"+this.getMontant()+")";
             stat = con.prepareStatement(requete);
             int z = stat.executeUpdate();

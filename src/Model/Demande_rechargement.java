@@ -62,7 +62,7 @@ public class Demande_rechargement {
         EtablirConnection ec = new EtablirConnection();
         Demande_rechargement[] valiny = null;
         try{
-            con = ec.get_Connection("enchere","enchere");
+            con = ec.get_Connection();
             String requete = "select * from demande_rechargement where etat=0";
             stat = con.prepareStatement(requete);
             res = stat.executeQuery();
@@ -99,7 +99,7 @@ public class Demande_rechargement {
         ResultSet res = null;
         EtablirConnection ec = new EtablirConnection();
         try{
-            con = ec.get_Connection("enchere","enchere");
+            con = ec.get_Connection();
             String requete = "update demande_rechargement set etat=1 where id="+this.getId();
             stat = con.prepareStatement(requete);
             int z = stat.executeUpdate();

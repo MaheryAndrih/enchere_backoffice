@@ -70,7 +70,7 @@ public class Client {
         EtablirConnection ec = new EtablirConnection();
         Client valiny = new Client();
         try{
-            con = ec.get_Connection("rencontre","rencontre");
+            con = ec.get_Connection();
             String requete = "select * from Client where id="+id;
             stat = con.prepareStatement(requete);
             res = stat.executeQuery();

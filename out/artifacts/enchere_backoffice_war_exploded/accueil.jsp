@@ -12,6 +12,6 @@
 </head>
 <body>
     <p><a href="LoginAmdinController">Tableau</a></p>
-    <p><a href="#">Demande recharement compte</a></p>
+    <p><a href="DemandeRechargementController">Demande recharement compte</a></p>
 </body>
 </html>
